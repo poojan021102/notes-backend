@@ -1,2 +1,1 @@
-release: python manage.py migrate
-web: gunicorn xxxx.wsgi --log-files=-
+web: python manage.py migrate && gunicorn <notes>.wsgi
